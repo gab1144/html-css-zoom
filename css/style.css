@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  background-color: black;
+  height: calc(100vh - 80px);
+  overflow: auto;
+}
+
+footer {
+  height: 80px;
+  background-color: rgb(34, 34, 34);
+}
