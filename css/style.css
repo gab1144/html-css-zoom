@@ -13,6 +13,7 @@ main {
   background-color: black;
   height: calc(100vh - 80px);
   overflow: auto;
+  position: relative;
 }
 
 footer {
@@ -43,8 +44,8 @@ footer {
 .container {
   max-width: 1700px;
   margin: 70px auto;
-  margin-bottom: 25px;
-  width: 80%;
+  margin-bottom: 0;
+  width: 90%;
 }
 
 .card {
@@ -98,13 +99,17 @@ footer > div > div {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  padding: 0 10px;
+  padding-top: 5px;
 }
 
 footer > div > div span {
   display: block;
   width: 100%;
   font-size: 13px;
-  margin-top: 0px;
+  font-weight: 600;
+  position: relative;
+  bottom: 5px;
 }
 
 .end {
@@ -113,10 +118,61 @@ footer > div > div span {
   color: red;
   display: flex;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.151);
+  font-size: 13px;
+}
+
+.end:hover {
+  background-color: rgba(255, 0, 0, 0.363);
+}
+
+.end:active {
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white;
 }
 
 .fa-chevron-up {
   position: absolute;
-  right: 0%;
+  right: 5px;
   font-size: 10px;
+}
+
+.menu-button, .end {
+  cursor: pointer;
+}
+
+.menu-button:active i:first-of-type:not(end) {
+  color: rgb(74, 195, 0);
+}
+
+.menu-button:hover{
+  background-color: rgba(255, 255, 255, 0.151);
+  border-radius: 10px;
+}
+
+.screen-control {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 13px;
+}
+
+.view, .screen-control > i {
+  padding: 5px;
+  margin-right: 5px;
+  background-color: rgb(74, 74, 74);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.screen-control > i {
+  padding-top: 7px;
+}
+
+.view:active, .screen-control > i:active {
+  color: rgb(199, 199, 199);
+}
+
+.view:hover, .screen-control > i:hover {
+  background-color: rgb(129, 129, 129);
 }
