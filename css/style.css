@@ -6,13 +6,13 @@
 
 body {
   font-family: sans-serif;
+  color: white;
 }
 
 main {
   background-color: black;
   height: calc(100vh - 80px);
   overflow: auto;
-  color: white;
 }
 
 footer {
@@ -74,4 +74,49 @@ footer {
 .name {
   font-size: 13px;
   font-weight: 600;
+}
+
+footer i {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+footer button {
+  border: none;
+}
+
+footer > div {
+  height: 100%;
+}
+
+footer > div > div {
+  min-width: 80px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+footer > div > div span {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  margin-top: 0px;
+}
+
+.end {
+  height: 100%;
+  padding: 0 20px;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.fa-chevron-up {
+  position: absolute;
+  right: 0%;
+  font-size: 10px;
 }
