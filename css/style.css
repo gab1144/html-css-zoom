@@ -12,7 +12,40 @@ body {
 header {
   height: 75px;
   background-color: black;
+  position: relative;
 }
+
+.screen-control {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 13px;
+}
+
+.view, .screen-control > i {
+  padding: 5px;
+  margin-right: 5px;
+  background-color: rgb(74, 74, 74);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.screen-control > i {
+  padding-top: 7px;
+}
+
+.view:active, .screen-control > i:active {
+  color: rgb(199, 199, 199);
+}
+
+.view:hover, .screen-control > i:hover {
+  background-color: rgb(129, 129, 129);
+}
+
+.mic-webcam, .meeting-control, .end {
+  min-width:fit-content;
+}
+
 
 main {
   background-color: black;
@@ -64,7 +97,6 @@ footer {
 .partecipant {
   width: 235px;
   height: 100%;
-  background-color: green;
   position: relative;
 }
 
@@ -115,25 +147,6 @@ footer > div > div span {
   bottom: 5px;
 }
 
-.end {
-  height: 100%;
-  padding: 0 20px;
-  color: red;
-  display: flex;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.151);
-  font-size: 13px;
-}
-
-.end:hover {
-  background-color: rgba(255, 0, 0, 0.363);
-}
-
-.end:active {
-  background-color: rgba(255, 0, 0, 0.6);
-  color: white;
-}
-
 .fa-chevron-up {
   position: absolute;
   right: 5px;
@@ -153,45 +166,33 @@ footer > div > div span {
   border-radius: 10px;
 }
 
-.screen-control {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  font-size: 13px;
-}
-
-.view, .screen-control > i {
-  padding: 5px;
-  margin-right: 5px;
-  background-color: rgb(74, 74, 74);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.screen-control > i {
-  padding-top: 7px;
-}
-
-.view:active, .screen-control > i:active {
-  color: rgb(199, 199, 199);
-}
-
-.view:hover, .screen-control > i:hover {
-  background-color: rgb(129, 129, 129);
-}
-
-.mic-webcam, .meeting-control, .end {
-  min-width:fit-content;
+.mic, .webcam {
+  min-width: 90px;
 }
 
 .meeting-control {
   min-width: 860px;
 }
 
-.mic, .webcam {
-  min-width: 90px;
-}
-
 .menu-button.share-s {
   width: 125px;
+}
+
+.end {
+  height: 100%;
+  padding: 0 20px;
+  color: red;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.151);
+  font-size: 13px;
+}
+
+.end:hover {
+  background-color: rgba(255, 0, 0, 0.363);
+}
+
+.end:active {
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white;
 }
