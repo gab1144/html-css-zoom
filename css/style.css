@@ -9,16 +9,22 @@ body {
   color: white;
 }
 
+header {
+  height: 75px;
+  background-color: black;
+}
+
 main {
   background-color: black;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 150px);
   overflow: auto;
   position: relative;
 }
 
 footer {
-  height: 80px;
+  height: 75px;
   background-color: rgb(34, 34, 34);
+  overflow: auto;
 }
 
 .flex {
@@ -42,7 +48,7 @@ footer {
 }
 
 .container {
-  margin: 70px auto;
+  margin:0 auto;
   margin-bottom: 0;
   width: 90%;
 }
@@ -81,12 +87,7 @@ footer {
 }
 
 footer i {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-footer button {
-  border: none;
+  font-size: 25px;
 }
 
 footer > div {
@@ -94,7 +95,6 @@ footer > div {
 }
 
 footer > div > div {
-  min-width: 80px;
   height: 100%;
   text-align: center;
   display: flex;
@@ -102,13 +102,13 @@ footer > div > div {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  padding: 0 10px;
+  padding: 0 5px;
   padding-top: 5px;
 }
 
 footer > div > div span {
   display: block;
-  width: 100%;
+  width: 90%;
   font-size: 13px;
   font-weight: 600;
   position: relative;
@@ -178,4 +178,20 @@ footer > div > div span {
 
 .view:hover, .screen-control > i:hover {
   background-color: rgb(129, 129, 129);
+}
+
+.mic-webcam, .meeting-control, .end {
+  min-width:fit-content;
+}
+
+.meeting-control {
+  min-width: 860px;
+}
+
+.mic, .webcam {
+  min-width: 90px;
+}
+
+.menu-button.share-s {
+  width: 125px;
 }
