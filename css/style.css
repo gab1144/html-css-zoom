@@ -12,9 +12,66 @@ main {
   background-color: black;
   height: calc(100vh - 80px);
   overflow: auto;
+  color: white;
 }
 
 footer {
   height: 80px;
   background-color: rgb(34, 34, 34);
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.space-btw {
+  justify-content: space-between;
+}
+
+.just-c {
+  justify-content: center;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 70px auto;
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+.card {
+  min-width: 245px;
+  width: calc(100% / 7);
+  height: 140px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+.partecipant {
+  min-width: 235px;
+  height: 100%;
+  background-color: green;
+  position: relative;
+}
+
+.mic-name {
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.295);
+  padding: 2px 5px;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 600;
 }
